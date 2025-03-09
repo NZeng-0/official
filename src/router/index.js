@@ -1,13 +1,12 @@
 import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
-import {basicRoutes} from "./basic-routes.js";
-import { useDevice } from '@/composables'
+import {baseRoutes} from "./basic-routes.js";
 
 export const router = createRouter({
     history:
         import.meta.env.VITE_USE_HASH === 'true'
             ? createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH || '/')
             : createWebHistory(import.meta.env.VITE_PUBLIC_PATH || '/'),
-    routes: basicRoutes,
+    routes: baseRoutes ,
 })
 
 export async function setupRouter(app) {
@@ -34,6 +33,4 @@ router.beforeEach(async (to) => {
     //     useUserStore().info = user
     //     return { ...to, replace: true }
     // }
-    const { isMobile } = useDevice()
-    console.log(isMobile())
 })

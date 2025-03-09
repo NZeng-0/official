@@ -1,0 +1,7 @@
+body {
+    margin: 0 auto;
+}
+
+.van-field__value{
+    width: 100% !important;
+}
