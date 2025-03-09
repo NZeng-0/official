@@ -47,10 +47,7 @@ const verifyAccess = () => {
   </div>
 </template>
 
-<style>
-.input-field{
-  justify-content: center;
-}
+<style scoped>
 .van-icon__image{
   width: 12.25px;
   height: 14px;
@@ -136,6 +133,8 @@ h3 {
 
 
 .input-field {
+  justify-content: center;
+
   margin: 16px 0;
   height: 48px;
   border-radius: 16px;
@@ -158,6 +157,7 @@ h3 {
   border-radius: 8px;
   font-size: 16px;
   padding: 12px 0;
+  border: none;
 }
 
 .fingerprint {
