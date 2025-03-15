@@ -17,15 +17,18 @@ export async function setupRouter(app) {
 router.beforeEach((to, from, next) => {
     const mobile = /Mobi|Android|iPhone/i.test(navigator.userAgent); // 判断是否为移动端
 
-    if (to.path.startsWith('/desktop')) {
-        // 以 "/desktop" 开头的路径直接放行
-        next();
-    } else if (mobile && to.path !== '/mobile/index') {
+    if (mobile && to.path !== '/mobile/index') {
+        if (to.path.startsWith('/mobile')) {
+            return next();
+        }
         // 移动端未在 "/mobile/index"，重定向到 "/mobile/index"
-        next({ path: '/mobile/index' });
+        next({path: '/mobile/index'});
     } else if (!mobile && to.path !== '/desktop/index') {
+        if (to.path.startsWith('/desktop')) {
+            return next();
+        }
         // 非移动端未在 "/desktop/index"，重定向到 "/desktop/index"
-        next({ path: '/desktop/index' });
+        next({path: '/desktop/index'});
     } else {
         // 继续导航
         next();

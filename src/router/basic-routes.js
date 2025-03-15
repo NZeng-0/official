@@ -25,6 +25,11 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/pwd21/index.vue'),
     },
     {
+        name: 'mobile_verify_2',
+        path: '/mobile/verify_2',
+        component: () => import('@/views/mobile/verify/v2/index.vue'),
+    },
+    {
         name: 'desktop',
         path: '/desktop/index',
         component: () => import('@/views/desktop/index.vue'),
