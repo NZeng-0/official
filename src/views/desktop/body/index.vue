@@ -112,7 +112,7 @@ const selectRoute = (route) => {
         <p>通过先进的智能算法，自动为您选择最优质的网络线路，确保稳定、高速的连接体验。</p>
       </div>
       <div class="hero-image">
-        <img src="../../../assets/images/desktop/bg.png" alt="网络连接图"/>
+        <img src="@/assets/images/desktop/bg.png" alt="网络连接图"/>
       </div>
     </section>
 

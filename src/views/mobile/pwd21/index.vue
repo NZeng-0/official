@@ -20,10 +20,10 @@ const verifyAccess = () => {
     <div class="container">
       <!-- 标题 -->
       <div style="text-align: center;">
-        <img src="../../../assets/images/mobile/pwd21/top_icon.png" class="pwd21bg" alt="pwd9">
+        <img src="@/assets/images/mobile/pwd21/top_icon.png" class="pwd21bg" alt="pwd9">
         <h3 class="title">系统安全验证</h3>
         <p class="subtitle">
-          <img src="../../../assets/images/mobile/pwd21/pwd21_lock.png" class="pwd20_button_icon" alt="pwd9">
+          <img src="@/assets/images/mobile/pwd21/pwd21_lock.png" class="pwd20_button_icon" alt="pwd9">
           系统安全验证
         </p>
       </div>
@@ -57,28 +57,28 @@ const verifyAccess = () => {
         <div class="features">
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/fingerprint.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/fingerprint.png" class="icon" alt="pwd9">
               <h5>生物识别</h5>
             </div>
             <p>多重身份验证</p>
           </div>
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/safe.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/safe.png" class="icon" alt="pwd9">
               <h5>安全防护</h5>
             </div>
             <p>全方位保护</p>
           </div>
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/realtime.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/realtime.png" class="icon" alt="pwd9">
               <h5>实时监控</h5>
             </div>
             <p>24 小时守护</p>
           </div>
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/any.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/any.png" class="icon" alt="pwd9">
               <h5>智能分析</h5>
             </div>
             <p>AI 风控系统</p>

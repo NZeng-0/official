@@ -1,6 +1,5 @@
 <script setup>
 import icon from "@/assets/images/mobile/pwd20/pwd20_input_icon.png"
-import fingerprint from "@/assets/images/mobile/pwd20/fingerprint.png"
 import {ref} from "vue";
 import {showToast} from "vant";
 
@@ -18,7 +17,7 @@ const verifyAccess = () => {
 <template>
   <div class="bg">
     <div class="container">
-      <img src="../../../assets/images/mobile/pwd20/pwd20.png" class="pwd20bg" alt="pwd9">
+      <img src="@/assets/images/mobile/pwd20/pwd20.png" class="pwd20bg" alt="pwd9">
       <!-- 标题 -->
       <div style="text-align: center;margin-top: 50px;">
         <h3 class="title">身份验证</h3>
@@ -28,7 +27,7 @@ const verifyAccess = () => {
       <!-- 验证卡片 -->
       <div class="card">
         <div class="icon-box">
-          <img src="../../../assets/images/mobile/pwd20/pwd20_icon.png" class="pwd20_icon" alt="pwd9">
+          <img src="@/assets/images/mobile/pwd20/pwd20_icon.png" class="pwd20_icon" alt="pwd9">
         </div>
         <div class="card-title">安全验证中心</div>
         <p class="card-subtitle">Security Authentication</p>
@@ -45,34 +44,34 @@ const verifyAccess = () => {
 
         <van-button type="primary" block class="verify-btn" @click="verifyAccess">
           验证访问
-          <img src="../../../assets/images/mobile/pwd20/pwd20_button_icon.png" class="pwd20_button_icon" alt="pwd9">
+          <img src="@/assets/images/mobile/pwd20/pwd20_button_icon.png" class="pwd20_button_icon" alt="pwd9">
         </van-button>
         <!-- 安全功能选项 -->
         <div class="features">
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/fingerprint.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/fingerprint.png" class="icon" alt="pwd9">
               <h5>生物识别</h5>
             </div>
             <p>多重身份验证</p>
           </div>
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/safe.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/safe.png" class="icon" alt="pwd9">
               <h5>安全防护</h5>
             </div>
             <p>全方位保护</p>
           </div>
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/realtime.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/realtime.png" class="icon" alt="pwd9">
               <h5>实时监控</h5>
             </div>
             <p>24 小时守护</p>
           </div>
           <div class="feature-item">
             <div class="item-box">
-              <img src="../../../assets/images/mobile/pwd20/any.png" class="icon" alt="pwd9">
+              <img src="@/assets/images/mobile/pwd20/any.png" class="icon" alt="pwd9">
               <h5>智能分析</h5>
             </div>
             <p>AI 风控系统</p>

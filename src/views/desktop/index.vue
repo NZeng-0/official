@@ -7,18 +7,18 @@
     <div class="container">
       <div class="title">
         <!-- Logo -->
-        <img src="../../assets/images/desktop/logo.png" class="logo" alt="logo"/>
+        <img src="@/assets/images/desktop/logo.png" class="logo" alt="logo"/>
         <!-- 标题 -->
         <div class="sub_title">密码访问验证</div>
         <!-- 说明 -->
         <div class="description">
-          <img src="../../assets/images/desktop/safe.png" class="safe" alt="safe">
+          <img src="@/assets/images/desktop/safe.png" class="safe" alt="safe">
           安全访问：请输入访问密码以继续浏览
         </div>
       </div>
       <!-- 输入框 + 按钮 -->
       <div class="input-container">
-        <img src="../../assets/images/desktop/lock.png" alt="lock" class="lock" />
+        <img src="@/assets/images/desktop/lock.png" alt="lock" class="lock" />
         <input type="password" placeholder="请输入访问密码" class="password-input">
         <button class="submit-button">验证</button>
       </div>

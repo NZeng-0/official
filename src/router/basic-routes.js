@@ -25,6 +25,16 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/pwd21/index.vue'),
     },
     {
+        name: 'mobile_slide_1',
+        path: '/mobile/slide_1',
+        component: () => import('@/views/mobile/slide/v1/index.vue'),
+    },
+    {
+        name: 'mobile_slide_10',
+        path: '/mobile/slide_10',
+        component: () => import('@/views/mobile/slide/v10/index.vue'),
+    },
+    {
         name: 'mobile_verify_2',
         path: '/mobile/verify_2',
         component: () => import('@/views/mobile/verify/v2/index.vue'),

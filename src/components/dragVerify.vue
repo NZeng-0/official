@@ -42,7 +42,9 @@
         ref="handler"
         :style="handlerStyle"
     >
-      <van-icon name="arrow" size="16" />
+      <slot name="icon">
+        <van-icon name="arrow" size="16" />
+      </slot>
     </div>
 
   </div>
@@ -250,6 +252,9 @@ export default {
   top: 0px;
   left: 0px;
   cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .drag_verify .dv_handler i {
   color: #666;
