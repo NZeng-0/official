@@ -20,8 +20,13 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/pwd20/index.vue'),
     },
     {
+        name: 'mobile_pwd21',
+        path: '/mobile/pwd21',
+        component: () => import('@/views/mobile/pwd21/index.vue'),
+    },
+    {
         name: 'desktop',
         path: '/desktop/index',
-        component: () => import('@/views/index.vue'),
+        component: () => import('@/views/desktop/index.vue'),
     },
 ]
