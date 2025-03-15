@@ -34,4 +34,14 @@ export const baseRoutes = [
         path: '/desktop/slide/index',
         component: () => import('@/views/desktop/slide/index.vue'),
     },
+    {
+        name: 'desktop_nav',
+        path: '/desktop/nav/index',
+        component: () => import('@/views/desktop/nav/index.vue'),
+    },
+    {
+        name: 'desktop_body',
+        path: '/desktop/body/index',
+        component: () => import('@/views/desktop/body/index.vue'),
+    },
 ]
