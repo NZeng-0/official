@@ -14,38 +14,21 @@ export async function setupRouter(app) {
     app.use(router)
 }
 
-router.beforeEach(async (to, from, next) => {
-    const {isMobile} = useDevice()
-    const mobile = isMobile()
-    // const token = useAuthStore().token
-    /** 没有token */
-    // if (to.path === '/register' || to.path === '/coach/login' || to.path === '/admin/login') {
-    //     return true
-    // }
-    // if (!token) {
-    //     if (WHITE_LIST.includes(to.path))
-    //         return true
-    //     return { path: 'login', query: { ...to.query, redirect: to.path } }
-    // }
-    // const info = useUserStore().info
-    // if (!info || Object.keys(info).length === 0) {
-    //     const [user] = await Promise.all([getUserInfo()])
-    //     if (!user) {
-    //         return { path: 'login', query: { ...to.query, redirect: to.path } }
-    //     }
-    //     useUserStore().info = user
-    //     return { ...to, replace: true }
-    // }
+router.beforeEach((to, from, next) => {
+    const mobile = /Mobi|Android|iPhone/i.test(navigator.userAgent); // 判断是否为移动端
 
-
-    if (mobile && to.path !== '/mobile/index') {
-        // Redirect to mobile index if not already there
-        next({path: '/mobile/index'});
+    if (to.path.startsWith('/desktop')) {
+        // 以 "/desktop" 开头的路径直接放行
+        next();
+    } else if (mobile && to.path !== '/mobile/index') {
+        // 移动端未在 "/mobile/index"，重定向到 "/mobile/index"
+        next({ path: '/mobile/index' });
     } else if (!mobile && to.path !== '/desktop/index') {
-        // Redirect to desktop index if not already there
-        next({path: '/desktop/index'});
+        // 非移动端未在 "/desktop/index"，重定向到 "/desktop/index"
+        next({ path: '/desktop/index' });
     } else {
-        // Continue with the navigation
+        // 继续导航
         next();
     }
-})
+});
+

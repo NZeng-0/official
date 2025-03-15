@@ -29,4 +29,9 @@ export const baseRoutes = [
         path: '/desktop/index',
         component: () => import('@/views/desktop/index.vue'),
     },
+    {
+        name: 'desktop_slide',
+        path: '/desktop/slide/index',
+        component: () => import('@/views/desktop/slide/index.vue'),
+    },
 ]
