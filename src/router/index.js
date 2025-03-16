@@ -3,14 +3,11 @@ import {baseRoutes} from "./basic-routes.js";
 import {useDevice} from "@/composables";
 
 export const router = createRouter({
-    history:
-        import.meta.env.VITE_USE_HASH === 'true'
-            ? createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH || '/')
-            : createWebHistory(import.meta.env.VITE_PUBLIC_PATH || '/'),
+    history: createWebHashHistory(import.meta.env.VITE_PUBLIC_PATH || '/'),
     routes: baseRoutes,
 })
 
-export async function setupRouter(app) {
+export function setupRouter(app) {
     app.use(router)
 }
 
