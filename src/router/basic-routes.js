@@ -35,6 +35,11 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/slide/v10/index.vue'),
     },
     {
+        name: 'mobile_verify_1',
+        path: '/mobile/verify_1',
+        component: () => import('@/views/mobile/verify/v1/index.vue'),
+    },
+    {
         name: 'mobile_verify_2',
         path: '/mobile/verify_2',
         component: () => import('@/views/mobile/verify/v2/index.vue'),
