@@ -83,8 +83,10 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  overflow: hidden;
   z-index: -1;
-  background: url("@/assets/images/mobile/countdown/v7.png");
+  background: url("@/assets/images/mobile/countdown/v7.png") no-repeat center center;
+  background-size: cover;
 }
 
 .logo-container {

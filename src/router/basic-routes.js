@@ -45,6 +45,16 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/verify/v2/index.vue'),
     },
     {
+        name: 'mobile_countdown_5',
+        path: '/mobile/countdown_5',
+        component: () => import('@/views/mobile/countdown/v5/index.vue'),
+    },
+    {
+        name: 'mobile_countdown_6',
+        path: '/mobile/countdown_6',
+        component: () => import('@/views/mobile/countdown/v6/index.vue'),
+    },
+    {
         name: 'mobile_countdown_7',
         path: '/mobile/countdown_7',
         component: () => import('@/views/mobile/countdown/v7/index.vue'),
