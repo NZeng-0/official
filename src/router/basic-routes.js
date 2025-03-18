@@ -70,6 +70,21 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/countdown/v9/index.vue'),
     },
     {
+        name: 'mobile_body_1',
+        path: '/mobile/body_1',
+        component: () => import('@/views/mobile/body/v1/index.vue'),
+    },
+    {
+        name: 'mobile_body_2',
+        path: '/mobile/body_2',
+        component: () => import('@/views/mobile/body/v2/index.vue'),
+    },
+    {
+        name: 'mobile_body_3',
+        path: '/mobile/body_3',
+        component: () => import('@/views/mobile/body/v3/index.vue'),
+    },
+    {
         name: 'desktop',
         path: '/desktop/index',
         component: () => import('@/views/desktop/index.vue'),
