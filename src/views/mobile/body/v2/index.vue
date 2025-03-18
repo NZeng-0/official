@@ -47,8 +47,8 @@ onMounted(() => {
 
     <div class="progress_box">
       <div style="display: flex; align-items: center; justify-content: space-between;">
-      <p class="progress-text">总体进度</p>
-      <p class="progress-text">{{ progress }}%</p>
+        <p class="progress-text">总体进度</p>
+        <p class="progress-text">{{ progress }}%</p>
       </div>
       <div class="progress-bar">
         <div class="progress" :style="{ width: `${progress}%` }"></div>
@@ -58,7 +58,10 @@ onMounted(() => {
     <p class="waiting-text">正在进行安全检测，请稍候...</p>
     <p class="countdown">预计剩余时间：{{ timeLeft }} 秒</p>
 
-    <p class="footer">🔒 安全防护由 Shield+ 提供技术支持</p>
+    <p class="footer">
+      <img src="@/assets/images/mobile/body/v2_bottom_icon.png" alt="icon" style="width: 9.19px;height: 10.5px;"/>
+      安全防护由 Shield+ 提供技术支持
+    </p>
   </div>
 </template>
 
@@ -111,7 +114,7 @@ onMounted(() => {
   margin-right: 12px;
 }
 
-.progress_box{
+.progress_box {
   width: 320px;
   padding-left: 12px;
   padding-right: 12px;
