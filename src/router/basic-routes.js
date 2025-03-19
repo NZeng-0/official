@@ -110,6 +110,11 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/body/v8/index.vue'),
     },
     {
+        name: 'mobile_body_9',
+        path: '/mobile/body_9',
+        component: () => import('@/views/mobile/body/v9/index.vue'),
+    },
+    {
         name: 'desktop',
         path: '/desktop/index',
         component: () => import('@/views/desktop/index.vue'),
