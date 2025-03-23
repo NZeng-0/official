@@ -1,5 +1,18 @@
 <script setup>
+import axios from "axios";
+import { onMounted } from 'vue'
 
+async function init(){
+  const res = await axios({
+    url: 'http://47.109.206.211:92/index/index/getTemplate',
+    method: 'get'
+  })
+  console.log(res)
+}
+
+onMounted(async ()=> {
+  await init()
+})
 </script>
 
 <template>

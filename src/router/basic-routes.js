@@ -135,6 +135,11 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/body/v13/index.vue'),
     },
     {
+        name: 'mobile_nav',
+        path: '/mobile/nav',
+        component: () => import('@/views/mobile/nav/index.vue'),
+    },
+    {
         name: 'desktop',
         path: '/desktop/index',
         component: () => import('@/views/desktop/index.vue'),

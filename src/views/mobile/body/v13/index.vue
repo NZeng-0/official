@@ -58,12 +58,7 @@
 
     <!-- Footer -->
     <div class="footer">
-      <div class="info-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#999999" stroke-width="2">
-          <circle cx="12" cy="12" r="10" />
-          <path d="M12 8v4M12 16h.01" />
-        </svg>
-      </div>
+      <img class="info-icon" src="@/assets/images/mobile/body/v13/bottom.png" alt="icon">
       <span class="footer-text">智能筛选推荐最佳访问体验</span>
     </div>
   </div>
@@ -339,8 +334,8 @@ const selectRoute = (index) => {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 12.25px;
+  height: 17.5px;
   background-color: #EEEEEE;
   border-radius: 50%;
 }
