@@ -30,6 +30,11 @@ export const baseRoutes = [
         component: () => import('@/views/mobile/slide/v1/index.vue'),
     },
     {
+        name: 'mobile_slide_2',
+        path: '/mobile/slide_2',
+        component: () => import('@/views/mobile/slide/v2/index.vue'),
+    },
+    {
         name: 'mobile_slide_10',
         path: '/mobile/slide_10',
         component: () => import('@/views/mobile/slide/v10/index.vue'),

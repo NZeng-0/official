@@ -1,7 +1,8 @@
 <script setup>
 import lock from  "@/assets/images/mobile/lock.png"
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import {showToast} from "vant";
+import axios from "axios";
 
 const password = ref("");
 
